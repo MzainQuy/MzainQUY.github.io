@@ -28,109 +28,134 @@
     <link rel="stylesheet" href="css/program/program.css">
     <!-- native-css-ends -->
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit-icons.min.js"></script>
     <title>D-LEAD</title>
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 d-flex align-items-center flex-wrap">
-                        <a class="navbar-brand me-auto mx-sm-auto" href="#">
-                            <img src="img/main-page-image/icon-nav.png" alt="" width="215" height="64">
-                        </a>
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/main-page-image/icon-nav.png" alt="" width="174" height="52">
+            </a>
 
-                        <div class="d-flex order-lg-2 order-md-3 search-container position-relative">
-                            <form action="#" class="search">
-                                <input class="search-input" type="text" placeholder="Cari Program, Artikel, Infografis..." name="search">
-                                <button type="submit" class="button-search"><i class="fa fa-search widht-search-icon"></i></button>
-                            </form>
-                        </div>
-                        <div class="dropdown dropdown-leanguge order-lg-3 order-md-2 mx-sm-auto mx-lg-0 ms-lg-auto">
-                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            Ind
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Indonesia</a></li>
-                                <li><a class="dropdown-item" href="#">Inglish</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <img src="img/main-page-image/humberger-icon.png" alt="" width="40" height="30">
-                    </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2">
-                                <li class="nav-item dropdown">
-                                    <div class="d-flex align-items-center" id="myDIV">
-                                        <i class="fa-solid fa-bars icon-widht"></i>
-                                        <h2 class="dropbtn">Semua</h2>
-                                        <div class="container dropdown-wrapper">
-                                            <div class="dropdown-content">
-                                                <div class="row d-flex justify-content-evenly flex-wrap">
-                                                    <div class="col-lg-4 wrapper-link">
-                                                        <h3 href="#">Tentang Kami</h3>
-                                                        <a href="#">Kontak</a>
-                                                        <a href="#">Tentang D-lead</a>
-                                                    </div>
-                                                    <div class="col-lg-4 wrapper-link">
-                                                        <h3 href="#">Program</h3>
-                                                        <a href="webinar.html">webinar</a>
-                                                        <a href="#">Legal Training</a>
-                                                    </div>
-                                                    <div class="col-lg-4 wrapper-link">
-                                                        <h3 href="#">Patrnership</h3>
-                                                        <a href="#">Alur Kerja Sama</a>
-                                                    </div>
-                                                    <div class="col-lg-4 wrapper-link">
-                                                        <h3 href="#">Artikel</h3>
-                                                        <a href="#">Berita</a>
-                                                        <a href="#">Infografik</a>
-                                                    </div>
-                                                    <div class="hover-kontak-link col-lg-4 wrapper-link ">
-                                                        <h3 href="#">Kontak</h3>
-                                                    </div>
-                                                    <div class="col-lg-4 wrapper-link">
-                                                        <h3 href="#">Legal Training</h3>
-                                                        <a href="#">maret 2022</a>
-                                                        <a href="#">maret 2022</a>
-                                                        <a href="#">maret 2022</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <ul class="navbar-nav mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link mx-3 mb-2" href="#">Beranda</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link mx-3 mb-2" href="program.html">Program</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link mx-3 mb-2" href="#">Kemitraan</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link mx-3 mb-2" href="#">Achievement</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link mx-3 mb-2" href="#">Berita Hukum</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars icon-widht me-1" style="font-size: 30px;"></i>
             </div>
 
+            <div class="collapse navbar-collapse nav__menu d-inline-block" id="collapes22">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" aria-current="page" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" aria-current="page" href="#">Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" aria-current="page" href="#">Kemitraan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" aria-current="page" href="#">Pencapaian</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" aria-current="page" href="#">Berita Hukum</a>
+                    </li>
+                </ul>
+                <form action="" class="form-class">
+                    <ul class="navbar-nav mx-2">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Semua
+                            </a>
+                            <ul class="dropdown-menu kopoii" aria-labelledby="navbarDropdown">
+                                <li class="">
+                                    <h4 style="margin-bottom: 2px;">Tentang Kami</h4>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Kontak</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Tentang D-Lead</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <li>
+                                        <h4 style="margin-bottom: 2px;">Program</h4>
+                                    </li>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Webinar</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Legal Training</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <h4 style="margin-bottom: 2px;">Kemitraan</h4>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Partnership</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Sponsorship</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <h4 style="margin-bottom: 2px;">Achievement</h4>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Narasumber</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Instansi</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <h4 style="margin-bottom: 2px;">Berita Hukum</h4>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Artikel</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Infografik</a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="wrapper-input">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <!-- <button class="search-icon" type="submit">
+                        <i class="fa fa-search widht-search-icon"></i>
+                    </button> -->
+                    </div>
+                    <div class="dropdown dropdown-language position-relative">
+                        <button class="button-language dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Indo
+                                </button>
+                        <ul class="dropdown-menu dropdown-toggle-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Inglish</a></li>
+                            <li><a class="dropdown-item" href="#">Indo</a></li>
+                        </ul>
+                    </div>
+
+                </form>
+            </div>
         </div>
     </nav>
-
-
 
     <section id="program">
         <div class="container-fluid">
@@ -195,6 +220,60 @@
         </div>
     </section>
 
+    <footer>
+        <div class="container-fluid">
+            <hr style="height: 2px;width:100%;">
+            <div class="container">
+                <div class="row wrapper-lines-br d-flex justify-content-center">
+                    <div class="col-lg-6 wrapper-footer-lines d-flex">
+                        <div class="teee d-flex align-items-center">
+                            <span>PERLU BANTUAN?</span>
+                            <a class="link-media-social"><i class="fa-solid fa-envelope-open-text mx-1"></i>Email</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wrapper-footer-lines">
+                        <div class="teee d-flex align-items-center">
+                            <span>IKUTI KAMI</span>
+                            <a class="link-media-social"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="link-media-social"><i class="fa-brands fa-youtube"></i></a>
+                            <a class="link-media-social"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="height: 2px;width:100%;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 d-flex flex-wrap justify-center">
+                        <div class="wrapper-footer-link">
+                            <h4>Links</h4>
+                            <ul class="uk-list uk-link-text">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Tentang Kami</a></li>
+                                <li><a href="#">Program</a></li>
+                                <li><a href="#">Partnership</a></li>
+                                <li><a href="#">Artikel</a></li>
+                            </ul>
+                        </div>
+                        <div class="wrapper-footer-link ml-left">
+                            <h4>Hubungi Kami</h4>
+                            <p>
+                                +62-832-234-4233
+                            </p>
+                            <p> Pakuwon Tower,<br> Jl. Raya Casablanca Kav.88,<br> Casablanca, Kota Jakarta Selatan,<br> Daerah Khusus Ibukota Jakarta 12870
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <div class="text-Reserved">
+            Copyright @2022 D-Lead. All Rights Reserved.
+        </div>
+    </footer>
 
 
 

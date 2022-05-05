@@ -24,9 +24,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <!-- fontawesome -->
+
     <!-- native css -->
     <link rel="stylesheet" href="css/about/about.css">
     <!-- native-css-ends -->
+    <!-- UIkit CSS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit-icons.min.js"></script>
 
     <title>D-LEAD</title>
 </head>
@@ -34,99 +42,122 @@
 <body>
 
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 d-flex align-items-center flex-wrap">
-                        <a class="navbar-brand me-auto mx-sm-auto" href="#">
-                            <img src="img/main-page-image/icon-nav.png" alt="" width="215" height="64">
-                        </a>
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/main-page-image/icon-nav.png" alt="" width="174" height="52">
+            </a>
 
-                        <div class="d-flex order-lg-2 order-md-3 search-container position-relative">
-                            <form action="#" class="search">
-                                <input class="search-input" type="text" placeholder="Cari Program, Artikel, Infografis..." name="search">
-                                <button type="submit" class="button-search"><i class="fa fa-search widht-search-icon"></i></button>
-                            </form>
-                        </div>
-                        <div class="dropdown dropdown-leanguge order-lg-3 order-md-2 mx-sm-auto mx-lg-0 ms-lg-auto">
-                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            Ind
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Indonesia</a></li>
-                                <li><a class="dropdown-item" href="#">Inglish</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <img src="img/main-page-image/humberger-icon.png" alt="" width="40" height="30">
-                    </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2">
-                                <li class="nav-item dropdown">
-                                    <div class="d-flex align-items-center" id="myDIV">
-                                        <i class="fa-solid fa-bars icon-widht"></i>
-                                        <h2 class="dropbtn">Semua</h2>
-                                        <div class="container dropdown-wrapper">
-                                            <div class="dropdown-content">
-                                                <div class="row d-flex justify-content-evenly flex-wrap">
-                                                    <div class="col-lg-4 wrapper-link">
-                                                        <h3 href="#">Tentang Kami</h3>
-                                                        <a href="#">Kontak</a>
-                                                        <a href="about-us.html">Tentang D-lead</a>
-                                                    </div>
-                                                    <div class="col-lg-4 wrapper-link">
-                                                        <h3 href="#">Program</h3>
-                                                        <a href="webinar.html">webinar</a>
-                                                        <a href="#">Legal Training</a>
-                                                    </div>
-                                                    <div class="col-lg-4 wrapper-link">
-                                                        <h3 href="#">Patrnership</h3>
-                                                        <a href="#">Alur Kerja Sama</a>
-                                                    </div>
-                                                    <div class="col-lg-4 wrapper-link">
-                                                        <h3 href="#">Artikel</h3>
-                                                        <a href="#">Berita</a>
-                                                        <a href="#">Infografik</a>
-                                                    </div>
-                                                    <div class="hover-kontak-link col-lg-4 wrapper-link ">
-                                                        <h3 href="#">Kontak</h3>
-                                                    </div>
-                                                    <div class="col-lg-4 wrapper-link">
-                                                        <h3 href="#">Legal Training</h3>
-                                                        <a href="#">maret 2022</a>
-                                                        <a href="#">maret 2022</a>
-                                                        <a href="#">maret 2022</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <ul class="navbar-nav mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link mx-3 mb-2" href="#">Beranda</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link mx-3 mb-2" href="program.html">Program</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link mx-3 mb-2" href="#">Kemitraan</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link mx-3 mb-2" href="#">Achievement</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link mx-3 mb-2" href="#">Berita Hukum</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars icon-widht me-1" style="font-size: 30px;"></i>
             </div>
 
+            <div class="collapse navbar-collapse nav__menu d-inline-block" id="collapes22">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" aria-current="page" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" aria-current="page" href="#">Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" aria-current="page" href="#">Kemitraan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" aria-current="page" href="#">Pencapaian</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" aria-current="page" href="#">Berita Hukum</a>
+                    </li>
+                </ul>
+                <form action="" class="form-class">
+                    <ul class="navbar-nav mx-2">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Semua
+                            </a>
+                            <ul class="dropdown-menu kopoii" aria-labelledby="navbarDropdown">
+                                <li class="">
+                                    <h4 style="margin-bottom: 2px;">Tentang Kami</h4>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Kontak</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Tentang D-Lead</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <li>
+                                        <h4 style="margin-bottom: 2px;">Program</h4>
+                                    </li>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Webinar</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Legal Training</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <h4 style="margin-bottom: 2px;">Kemitraan</h4>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Partnership</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Sponsorship</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <h4 style="margin-bottom: 2px;">Achievement</h4>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Narasumber</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Instansi</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <h4 style="margin-bottom: 2px;">Berita Hukum</h4>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Artikel</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Infografik</a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="wrapper-input">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <!-- <button class="search-icon" type="submit">
+                        <i class="fa fa-search widht-search-icon"></i>
+                    </button> -->
+                    </div>
+                    <div class="dropdown dropdown-language position-relative">
+                        <button class="button-language dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Indo
+                                </button>
+                        <ul class="dropdown-menu dropdown-toggle-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Inglish</a></li>
+                            <li><a class="dropdown-item" href="#">Indo</a></li>
+                        </ul>
+                    </div>
+
+                </form>
+            </div>
         </div>
     </nav>
 
@@ -137,8 +168,8 @@
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col-lg-7">
                         <div class="text-wrapper">
-                            <h4>Welcome To D-lead</h4>
-                            <h1>We are a leading law agency providing creative solutions</h1>
+                            <h4 class="asdasd">Welcome To D-lead</h4>
+                            <h1 style="max-width: 480px;">We are a leading law agency providing creative solutions</h1>
                             <p>With over 20 years of experience on the digital law, we can offer what you are looking for, from a landing page to a complex multipage law.</p>
                         </div>
                     </div>
@@ -158,14 +189,14 @@
             <div class="container">
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col-lg-6">
-                        <div class="img-wrapper-vision">
-                            <img src="img/about-us/img-1.svg" alt="">
+                        <div class="about-wrapper-tentang">
+                            <iframe src="https://www.youtube.com/embed/HNWn885qWtU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="text-wrapper-vision">
+                        <div class="text-wrapper-tentang">
                             <h1>Tentang D-Lead</h1>
-                            <div class="p-wrapper-vision">
+                            <div class="p-wrapper-tentang">
                                 D-LEAD bergerak pada dua bidang utama, yaitu Pendidikan dan Jasa. Pada bidang pendidikan D-LEAD berkomitmen untuk merevolusi penyelesaian sengketa kesehatan melalui pendidikan dan sertifikasi pelatihan mediator, negosiator, arbiter, dan alternatif penyelesaian
                                 sengketa lainnya di bidang kesehatan. Sedangkan, pada bidang jasa D-LEAD memberikan jasa konsultansi dan penyelesaian sengekta kesehatan baik secara individual maupun korporasi.
                             </div>
@@ -177,22 +208,20 @@
     </section>
 
     <section id="vision">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="h1-vision text-center my-4">Visi & Misi</div>
-                <div class="col-lg-12">
-                    <div class="img-wrapper-vision">
-                        <img src="img/about-us/img-2.svg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-12 d-flex justify-content-center">
+                <div class="h1-vision text-center my-4">Visi dan Misi D-lead</div>
+                <div class="col-lg-12 d-flex justify-content-center flex-wrap">
                     <div class="vision-wrapper">
+                        <img src="img/about-us/img-1.svg">
                         <h2>Visi</h2>
                         <div class="p-wrapper-visi">
-                            Menjadi satu-satunya lembaga penyelesaian sengketa kesehatan secara alternatif yang terpercaya dan mampu menyelesaikan sengketa bidang kesehatan dan bidang medis yang mengutamakan integritas dan profesionalisme serta mencegah masalah hukum lain.
+                            Berkomitmen untuk merevolusi penyelesaian sengketa medis dan kesehatan sesuai dengan amanat undang-undang melalui pendidikan calon Mediator bersertifikat Mahkamah Agung, pelayanan penyelesaian sengketa alternatif di bidang kesehatan, dan pengenalan serta
+                            pengembangan penyelesaian sengketa alternatif di bidang pelayanan kesehatan dan medis.
                         </div>
                     </div>
                     <div class="vision-wrapper">
+                        <img src="img/about-us/img-2.svg">
                         <h2>Misi</h2>
                         <div class="p-wrapper-visi">
                             Berkomitmen untuk merevolusi penyelesaian sengketa medis dan kesehatan sesuai dengan amanat undang-undang melalui pendidikan calon Mediator bersertifikat Mahkamah Agung, pelayanan penyelesaian sengketa alternatif di bidang kesehatan, dan pengenalan serta
@@ -218,23 +247,46 @@
                         </div>
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center align-content-center">
+                <div class="row d-flex justify-content-center align-items-center">
                     <div class="col-lg-6 img-lay">
-                        <img src="img/about-us/img-3.svg" alt="">
+                        <img src="img/main-page-image/hero-img-slider/hero-1.jpg" alt="">
+                        <div class="wrapper-promote-2">
+                            <h3>Get In-Depth Knowledge.
+                            </h3>
+                            <p>Lorem ipsum dolor sit amet.lorem3 Lorem.</p>
+                            <a href="webinar.html">
+                                <button type="" class="button-promoter">Try It Now!</button>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="text-wrapper-lay">
-                            <h3>PENDIDIKAN DAN PELATIHAN SERTIFIKASI MEDIATOR, NEGOSIATOR.</h3>
-                            <p>Pelatihan dan Sertifikasi yang diadakan APSKI memiliki kekhususan tersendiri, yaitu adanya peningkatan kapasitas peserta di bidang hukum Kesehatan.</p>
+                        <div class="wrapper-layanan-promote d-flex">
+                            <div class="img-layana-promote-wrapper">
+                                <img src="img/about-us/layanan-1.png" alt="">
+                            </div>
+                            <div class="text-wrapper-lay">
+                                <h3>PENDIDIKAN DAN PELATIHAN SERTIFIKASI MEDIATOR, NEGOSIATOR.</h3>
+                                <p>Pelatihan dan Sertifikasi yang diadakan APSKI memiliki kekhususan tersendiri, yaitu adanya peningkatan kapasitas peserta di bidang hukum Kesehatan.</p>
+                            </div>
                         </div>
-                        <div class="text-wrapper-lay">
-                            <h3>KONSULTANSI DAN JASA PELAYANAN PENYELESAIAN SENGKETA KESEHATAN.</h3>
-                            <p>D-lead memberikan jasa konsultansi dan penyelesaian Kesehatan, baik perseorangan, perusahaan, dan penyedia layanan Kesehatan maupun non Kesehatan lainnya. Sesuai dengan tagline kami, “Your Dispute, Settlement Partner” komitemen,
-                                pelayanan, dan hasil yang terbaik adalah tujuan kami sebagai partner dalam memberikan pelayanan optimal.p>
+                        <div class="wrapper-layanan-promote d-flex">
+                            <div class="img-layana-promote-wrapper">
+                                <img src="img/about-us/layanan-2.png" alt="">
+                            </div>
+                            <div class="text-wrapper-lay">
+                                <h3>KONSULTANSI DAN JASA PELAYANAN PENYELESAIAN SENGKETA KESEHATAN.</h3>
+                                <p>D-lead memberikan jasa konsultansi dan penyelesaian Kesehatan, baik perseorangan, perusahaan, dan penyedia layanan Kesehatan maupun non Kesehatan lainnya. Sesuai dengan tagline kami, “Your Dispute, Settlement Partner” komitemen,
+                                    pelayanan, dan hasil yang terbaik adalah tujuan kami sebagai partner dalam memberikan pelayanan optimal.p>
+                            </div>
                         </div>
-                        <div class="text-wrapper-lay">
-                            <h3>PENGEMBANGAN SKILL DAN KEILMUAN DI BIDANG HUKUM KESEHATAN.</h3>
-                            <p>D-lead hadir menyelenggarakan webinar dan workshop series serta in-house training yang tersertifikasi SKP/Non SKP oleh berbagai organisasi profesi di bidang Kesehatan, seperti IDI, PPNI, PDGI, dan lain-lainnya.p>
+                        <div class="wrapper-layanan-promote d-flex">
+                            <div class="img-layana-promote-wrapper">
+                                <img src="img/about-us/layanan-3.png" alt="">
+                            </div>
+                            <div class="text-wrapper-lay">
+                                <h3>PENGEMBANGAN SKILL DAN KEILMUAN DI BIDANG HUKUM KESEHATAN.</h3>
+                                <p>D-lead hadir menyelenggarakan webinar dan workshop series serta in-house training yang tersertifikasi SKP/Non SKP oleh berbagai organisasi profesi di bidang Kesehatan, seperti IDI, PPNI, PDGI, dan lain-lainnya.p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -242,6 +294,50 @@
         </div>
     </section>
 
+    <section id="filosofi">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="h2-wrapper-filosofi">
+                            <h2>FILOSOFI LOGO D-Lead</h2>
+                        </div>
+                        <div class="filosofi-wrapper">
+                            <div class="filosofi-content d-flex justify-content-center align-items-center">
+                                <img src="img/about-us/filosofi-1.png" alt="">
+                                <div class="p-filosofi">
+                                    LOGO <span>APSKI</span> YANG SEDERHANA MEMBENTUK AKRONIM LEMBAGA ALTERNATIF PENYELESAIAN SENGKETA KESE HATAN INDONE SIA, YAITU APSKI MENGAR- TIKAN METODE ALTERNATIF PENYELESAIAN SENGEKTA CAPS) DI BIDANG KESEHATAN BERSIFAT
+                                    SEDERHANA, CEPAT, DAN WIN- WIN SOLUTION.
+                                </div>
+                            </div>
+                            <div class="filosofi-content d-flex justify-content-center align-items-center">
+                                <img src="img/about-us/filosofi-2.png" alt="">
+                                <div class="p-filosofi">
+                                    HURUF <span>"S"</span> YANG MELAMBANGKAN DUA ORANG BERJABAT TANGAN MENANDAKAN PROSES <span>APSKI</span> DI BIDANG KESEHATAN BERTUJUAN UNTUK MENCAPAI KESEPAKATAN ATAU PERJANJIAN BERSAMA SE CARA DAMAL.
+                                </div>
+                            </div>
+                            <div class="filosofi-content d-flex justify-content-center align-items-center">
+                                <img src="img/about-us/filosofi-3.png" alt="">
+                                <div class="p-filosofi">
+                                    KOTAK YANG MELINGKARI AKRONIM <span>APSKI</span> DENGAN SUDUT TUMPUL MENANDAKAN BAHWA APS BERSIFAT LUWES DAN DIKEMBALIKAN KESE- PAKATAN PARA PIHAK.
+                                </div>
+                            </div>
+                            <div class="filosofi-content d-flex justify-content-center align-items-center">
+                                <img src="img/about-us/filosofi-4.png" alt="">
+                                <div class="p-filosofi">
+                                    PERPADUAN WARNA HIJAU TOSCA DAN PUTIH MENANDAKAN BAHIA <span>APSKI</span> MERUPAKAN LEMBAGA YANG TEGAS, ELAS, DAN TERKHUSUS PADA APS DI BIDANG KESEHATAN. </div>
+                            </div>
+                            <div class="filosofi-content d-flex justify-content-center align-items-center" style="margin-bottom: 120px;">
+                                <img src="img/about-us/filosofi-5.png" alt="">
+                                <div class="p-filosofi">
+                                    WARNA BIRU PADA NAMA LENGKAP <span>APSKI</span> MENANDAKAN BAHWA <span>APSKI</span> MERUPAKAN LEMBAGA PROFESIONAL YANG TERSTRUKTUR DALAM MENYELESAIAKN TUGAS DAN MEMBERIKAN PELAYANAN SECARA OPTIMAL </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="mengapa">
         <div class="container-fluid">
@@ -251,30 +347,202 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 mengapa-wrpper">
                         <div class="text-mengapa-wrapper">
                             <div class="img-wrepper-mengapa">
-                                <img src="img/about-us/img-4.svg" alt="">
+                                <img src="img/about-us/choice-3.svg" alt="">
                             </div>
-                            Lembaga alternatif penyelesaian sengketa khusus di bidang kesehatan pertama dan terbaik di Indonesia.
+                            <div class="wrapper-text-mengapa">
+                                Lembaga alternatif penyelesaian sengketa khusus di bidang kesehatan pertama dan terbaik di Indonesia.
+
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 mengapa-wrpper">
                         <div class="img-wrepper-mengapa">
-                            <img src="img/about-us/img-4.svg" alt=""> Mitra strategis IICT yang merupakan lembaga sertifikasi mediator terakreditasi MA pertama dan berpengalaman di Indonesia.
+                            <img src="img/about-us/choice-2.svg" alt="">
                         </div>
+                        <div class="wrapper-text-mengapa">
+                            Mitra strategis IICT yang merupakan lembaga sertifikasi mediator terakreditasi MA pertama dan berpengalaman di Indonesia.
 
+                        </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 mengapa-wrpper">
                         <div class="img-wrepper-mengapa">
-                            <img src="img/about-us/img-4.svg" alt=""> Pengajar merupakan akademisi dan praktisi terbaik berlatar belakang universitas ternama di Indonesia.
+                            <img src="img/about-us/choice-1.svg" alt="">
                         </div>
-
+                        <div class="wrapper-text-mengapa">
+                            Pengajar merupakan akademisi dan praktisi terbaik berlatar belakang universitas ternama di Indonesia.
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="peta">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 peta-wrapper">
+                        <div class="h2-lokasi-peta">
+                            <h2>Jangkaun D-Lead</h2>
+                            <p>Jangkaun 34 Provinsi Di Indonesia</p>
+                        </div>
+                        <img src="img/about-us/peta-indo.png" alt="">
+                        <div class="h3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore harum corrupti odit!</div>
+                    </div>
+                    <div class="col-lg-12 lokasi-peta-child d-flex justify-content-center">
+                        <div class="wrapper-petsa d-flex">
+                            <div class="img-child-peta">
+                                <img src="img/about-us/map-indo.svg" alt="">
+                                <div class="text-wrapper-peta">
+                                    <h3>+200</h3>
+                                    <p>konten hukum</p>
+                                </div>
+                            </div>
+                            <div class="img-child-peta">
+                                <img src="img/about-us/magnet.svg" alt="">
+                                <div class="text-wrapper-peta">
+                                    <h3>+17.000</h3>
+                                    <p>Pengikut sosial Media</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="uk-section mt-5 lokasi-2">
+        <div class="uk-container">
+            <div class="uk-grid container">
+                <div class="row d-flex justify-content-center align-content-center">
+                    <div class="col-lg-6 text-lokasi">
+                        <h1 class="uk-margin-bottom header-hubungi">Hubungi Kami</h1>
+                        <p class="uk-margin-remove-top uk-text-dark">Tetap terhubung dengan mengikuti sosial media D-lead atau datangi kami secara langsung.</p>
+                        <div class="uk-grid-divider uk-child-width-1-2@m uk-child-width-1-2@s uk-margin-medium-top uk-margin-bottom" data-uk-grid>
+                            <div>
+                                <h4>Media Sosial</h4>
+                                <p>Tetap terhubung dengan kami melalui media sosial</p>
+                                <div class="uk-flex">
+                                    <div class="in-top-offset-5">
+                                        <i class="fab fa-instagram uk-icon-button fa-sm uk-text-warning"></i>
+                                    </div>
+                                    <div class="uk-margin-small-left uk-margin-bottom">
+                                        <a class="uk-text-dark" href="#" target="_blank"> D-lead </a>
+                                    </div>
+                                </div>
+                                <div class="uk-flex">
+                                    <div class="in-top-offset-5">
+                                        <i class="fab fa-twitter uk-icon-button fa-sm uk-text-primary"></i>
+                                    </div>
+                                    <div class="uk-margin-small-left uk-margin-bottom">
+                                        <a class="uk-text-dark" href="#" target="_blank"> D-lead</a>
+                                    </div>
+                                </div>
+                                <div class="uk-flex">
+                                    <div class="in-top-offset-5">
+                                        <i class="fab fa-youtube uk-icon-button fa-sm fa-sm uk-text-danger"></i>
+                                    </div>
+                                    <div class="uk-margin-small-left uk-margin-bottom">
+                                        <a class="uk-text-dark" href="#" target="_blank"> D-lead</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>Kontak</h4>
+                                <p class="uk-text-dark">Silahkan hubungi kami melalui surel </p>
+                                <div class="uk-flex">
+                                    <div class="in-top-offset-5">
+                                        <i class="fas fa-envelope uk-icon-button fa-sm uk-text-danger"></i>
+                                    </div>
+                                    <div class="uk-margin-small-left">
+                                        <p class="uk-text-dark">info@Dlead.id </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>Lokasi Bisnis</h4>
+                            <div class="uk-flex">
+                                <div class="in-top-offset-5 uk-margin-bottom">
+                                    <i class="fas fa-building uk-icon-button fa-sm uk-text-danger"></i>
+                                </div>
+                                <div class="uk-margin-small-left" data-uk-lightbox>
+                                    <p class="uk-text-dark"> Pakuwon Tower, Jl. Raya Casablanca Kav.88, Casablanca, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12870 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wrapper-google">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15864.980450874678!2d106.84246277210309!3d-6.231383396818691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3453d2cf357%3A0xbec09585133690e3!2sPakuwon%20Tower!5e0!3m2!1sen!2sid!4v1651650689884!5m2!1sen!2sid"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid">
+            <hr style="height: 2px;width:100%;">
+            <div class="container">
+                <div class="row wrapper-lines-br d-flex justify-content-center">
+                    <div class="col-lg-6 wrapper-footer-lines d-flex">
+                        <div class="teee d-flex align-items-center">
+                            <span>PERLU BANTUAN?</span>
+                            <a class="link-media-social"><i class="fa-solid fa-envelope-open-text mx-1"></i>Email</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wrapper-footer-lines">
+                        <div class="teee d-flex align-items-center">
+                            <span>IKUTI KAMI</span>
+                            <a class="link-media-social"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="link-media-social"><i class="fa-brands fa-youtube"></i></a>
+                            <a class="link-media-social"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="height: 2px;width:100%;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 d-flex flex-wrap justify-center">
+                        <div class="wrapper-footer-link">
+                            <h4>Links</h4>
+                            <ul class="uk-list uk-link-text">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Tentang Kami</a></li>
+                                <li><a href="#">Program</a></li>
+                                <li><a href="#">Partnership</a></li>
+                                <li><a href="#">Artikel</a></li>
+                            </ul>
+                        </div>
+                        <div class="wrapper-footer-link ml-left">
+                            <h4>Hubungi Kami</h4>
+                            <p>
+                                +62-832-234-4233
+                            </p>
+                            <p> Pakuwon Tower,<br> Jl. Raya Casablanca Kav.88,<br> Casablanca, Kota Jakarta Selatan,<br> Daerah Khusus Ibukota Jakarta 12870
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <div class="text-Reserved">
+            Copyright @2022 D-Lead. All Rights Reserved.
+        </div>
+    </footer>
+
 
 
 
@@ -300,6 +568,7 @@
     <!-- script-native -->
     <script src="js/script.js "></script>
     <!-- script-native-ends -->
+
 </body>
 
 </html>
