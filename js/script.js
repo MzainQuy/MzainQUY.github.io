@@ -63,31 +63,28 @@ var swiper = new Swiper(".childSwiper", {
         delay: 5000,
         disableOnInteraction: false,
     },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+    },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-        320: {
+        375: {
             loop: true,
             slidesPerView: 1,
-
         },
-        480: {
-            slidesPerView: 2,
-            spaceBetween: 20
-        },
-
-        640: {
+        768: {
             loop: true,
             slidesPerView: 2,
-            spaceBetween: 20
         },
-        991: {
+        1024: {
             loop: true,
             slidesPerView: 3,
             spaceBetween: 20
-        }
+        },
 
 
 
@@ -154,6 +151,37 @@ var swiper = new Swiper(".child-2mySwiper", {
         1240: {
             loop: true,
             slidesPerView: 2,
+        },
+    }
+});
+
+
+// halaman program/slider-mentor
+
+var swiper = new Swiper(".swiper-mentor", {
+    slidesPerView: 3,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+    },
+    breakpoints: {
+        375: {
+            loop: true,
+            slidesPerView: 1,
+        },
+        768: {
+            loop: true,
+            slidesPerView: 2,
+        },
+        1024: {
+            loop: true,
+            slidesPerView: 3,
         },
     }
 });

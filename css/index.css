@@ -634,6 +634,18 @@
     top: 48%;
 }
 
+.swiper-pagination {
+    top: 97%;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    width: 30px;
+    height: 6px;
+    border-radius: 2px;
+    color: #232931;
+    background: #3d4a6f;
+}
+
 @media screen and (max-width: 991px) {
     .swiper-button-next-child {
         border-radius: 50%;
