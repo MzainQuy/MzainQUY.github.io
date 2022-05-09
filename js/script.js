@@ -25,17 +25,16 @@ function linkAction() {
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
-function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("navbar").style.background = "white";
-        document.getElementById("navbar").style.boxShadow = "rgba(0, 0, 0, 0.1) 0px 30px 35px -5px";
-        document.getElementById("navbar").style.boxShadow = "rgba(0, 0, 0, 0.04) 0px 20px 20px -5px";
-    } else {
-        document.getElementById("navbar").style.background = "";
-        document.getElementById("navbar").style.boxShadow = "";
-        document.getElementById("navbar").style.boxShadow = "";
+const navbar = document.getElementsByTagName('nav')[0];
+
+window.addEventListener('scroll', function() {
+    if (window.scrollY >= 80) {
+        navbar.classList.replace('nab-color', 'navbar-color-scroll');
+    } else if (this.window.scrollY <= 80) {
+        navbar.classList.replace('navbar-color-scroll', 'nab-color');
     }
-}
+});
+
 
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
