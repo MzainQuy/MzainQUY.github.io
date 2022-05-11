@@ -16,6 +16,17 @@
 
 /* navbar */
 
+.nab-color {
+    background: transparent;
+    border-bottom: 5px solid #dcedfa;
+}
+
+.navbar-color-scroll {
+    transition: all ease-in-out 0.4s;
+    background: var(--nav-foo-background);
+    border-bottom: 0px solid black;
+}
+
 .navbar {
     z-index: 9999;
     width: 100%;
@@ -24,13 +35,17 @@
     position: fixed;
 }
 
+.padding-navbar {
+    margin: 30px;
+}
+
 .nav__menu {
     width: 100%;
 }
 
 .nav-link {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--Nav-color);
 }
 
@@ -42,39 +57,55 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-.button-language {
+.search {
     position: relative;
-    width: 80px;
-    border: none;
-    background: linear-gradient(120deg, #316B83, #93B5C6);
-    padding: 8px;
-    border-radius: 8px;
+    height: 50px;
+    border-radius: 12px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.search .input {
+    background-color: #fff;
+    border: 0;
     font-size: 18px;
-    font-weight: 700;
-    color: #FFFFFF;
-    margin-left: 5px;
-    margin-top: 1.5px;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    transition: width 0.5s ease;
+    border-radius: 12px;
 }
 
-.button-language:hover {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-
-.search-icon {
+.btn {
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
     position: absolute;
-    top: 19%;
-    right: 6.7%;
-    border: none;
-    background: transparent;
-    background: var(--Nav-color);
-    color: #FFFFFF;
-    height: 44px;
-    width: 3%;
-    border-radius: 0px 14px 14px 0px;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.5s ease;
+    border-radius: 12px;
+}
+
+.btn:focus,
+.input:focus {
+    outline: none;
+}
+
+.search.active .input {
+    width: 100%;
+    margin-right: 30px;
+}
+
+.search.active .btn {
+    transform: translateX(200px);
 }
 
 .dropdown-menu {
-    margin-left: -40px;
+    margin-left: -120px;
 }
 
 .dropdown-menu h4 {
@@ -107,25 +138,9 @@
     display: flex;
 }
 
-.kopoii {
+.ul-dropdown-wrapper {
     min-width: 228px;
     padding: 20px;
-}
-
-@media screen and (max-width: 1280px) {
-    .search-icon {
-        right: 8.3%;
-        width: 4%;
-        top: 11px;
-    }
-}
-
-@media screen and (max-width: 1180px) {
-    .search-icon {
-        right: 8.7%;
-        width: 4%;
-        top: 12px;
-    }
 }
 
 @media screen and (max-width: 991px) {
@@ -151,11 +166,27 @@
     .form-class {
         display: inline;
     }
-    .search-icon {
-        top: 40.5%;
-        right: 3.7%;
-        height: 44px;
-        width: 11%;
+    .padding-navbar {
+        margin: 0px;
+    }
+    .nab-color {
+        background: transparent;
+        border-bottom: 3px solid #dcedfa;
+    }
+    .search.active .input {
+        width: 50%;
+    }
+    .search.active .btn {
+        transform: translateX(250px);
+    }
+    .search {
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .dropdown-menu {
+        margin-left: 0px;
     }
 }
 
@@ -165,12 +196,29 @@
     }
 }
 
-.show {
-    right: 0px;
+@media screen and (max-width: 575px) {
+    .search.active .input {
+        width: 80%;
+    }
+    .search.active .btn {
+        transform: translateX(280px);
+    }
 }
 
-.navbar {
-    background: var(--nav-foo-background);
+@media screen and (max-width: 425px) {
+    .search.active .input {
+        width: 100%;
+    }
+    .search.active .btn {
+        transform: translateX(230px);
+    }
+    .navbar-brand img {
+        width: 145px;
+    }
+}
+
+.show {
+    right: 0px;
 }
 
 
@@ -254,8 +302,6 @@
 
 
 /* kerjasama */
-
-#kemitraan {}
 
 .kemitraan2 {
     padding: 50px;
@@ -345,20 +391,20 @@
     font-size: 19px;
 }
 
-.rb-container {
+.list-guider-wrapper {
     width: 100%;
     margin: auto;
     display: block;
     position: relative;
 }
 
-.rb-container ul.rb {
+.list-guider-wrapper ul.underlist-guide-partner {
     margin: 2.5em 0;
     padding: 0;
     display: inline-block;
 }
 
-.rb-container ul.rb li {
+.list-guider-wrapper ul.underlist-guide-partner li {
     list-style: none;
     margin: auto;
     margin-left: 4.2em;
@@ -368,11 +414,11 @@
     position: relative;
 }
 
-.rb-container ul.rb li:last-child {
+.list-guider-wrapper ul.underlist-guide-partner li:last-child {
     border-left: 0;
 }
 
-.rb-container ul.rb li::before {
+.list-guider-wrapper ul.underlist-guide-partner li::before {
     position: absolute;
     left: -18px;
     top: -5px;
@@ -385,17 +431,57 @@
     transition: all 500ms ease-in-out;
 }
 
-.rb-container ul.rb li:hover::before {
+.list-guider-wrapper ul.underlist-guide-partner li:hover::before {
     border-color: #232931;
     transition: all 1000ms ease-in-out;
 }
 
-ul.rb li .timestamp {
+ul.underlist-guide-partner li .number-list {
     color: var(--Nav-color);
     position: relative;
     width: 100px;
     font-size: 21px;
     font-weight: 900;
+}
+
+@media screen and (max-width: 786px) {
+    .h2-head-partner {
+        font-size: 37px;
+        font-weight: 600;
+    }
+    .item-title {
+        margin-right: 20px;
+        font-size: 21px;
+    }
+    .span-wrapp {
+        padding: 8px;
+        font-size: 17px;
+    }
+    #span_list_kemitraan {
+        color: #3d4a6f;
+        background: none;
+        padding: 0px;
+        border-radius: 0px;
+        font-weight: 400;
+        box-shadow: none;
+        font-size: 18px;
+    }
+    .list-guider-wrapper ul.underlist-guide-partner li {
+        list-style: none;
+        margin: auto;
+        margin-left: 1.5em;
+        min-height: 50px;
+        border-left: 1px dashed #322f69;
+        padding: 0 0 50px 30px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .span-wrapp {
+        display: inline-block;
+        width: 100%;
+    }
 }
 
 
@@ -451,6 +537,7 @@ ul.rb li .timestamp {
 
 .text-input textarea {
     border: none;
+    width: 100%;
     border-radius: 2px;
     margin-bottom: 18px;
 }
@@ -505,6 +592,35 @@ ul.rb li .timestamp {
     box-shadow: 1px 3px 1px #03045E;
     transition: all 0.4s ease-in-out;
     font-weight: 700;
+}
+
+@media screen and (max-width: 991px) {
+    .container-message {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(160deg, #001D6E, #112B3C);
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        flex-wrap: wrap;
+    }
+    .text-input {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .text-input h3 {
+        font-size: 40px;
+        line-height: 1.3;
+        font-weight: 700;
+        color: #F2F2F2;
+    }
+    .text-input p {
+        width: 100%;
+        font-size: 19px;
+        line-height: 1.3;
+        font-weight: 500;
+        color: #F2F2F2;
+    }
 }
 
 

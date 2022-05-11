@@ -39,43 +39,50 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg nab-color">
+        <div class="container-fluid padding-navbar">
+            <!-- icon-navbar -->
             <a class="navbar-brand" href="#">
                 <img src="/img/main-page-image/icon-nav.png" alt="" width="174" height="52">
             </a>
-
+            <!-- icon-navbar-ends -->
+            <!-- toggle-image-responsive -->
             <div class="nav__toggle" id="nav-toggle">
                 <i class="fa-solid fa-bars icon-widht me-1" style="font-size: 30px;"></i>
             </div>
-
+            <!-- toggle-image-responsive-ends -->
             <div class="collapse navbar-collapse nav__menu d-inline-block" id="collapes22">
-
+                <!-- leftSide-navigation-option -->
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link mx-2" aria-current="page" href="/index.html">Beranda</a>
+                        <a class="link-active nav-link mx-1 " aria-current="page" href="/index.html">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" aria-current="page" href="/page-page/program/index.html">Program</a>
+                        <a class="nav-link mx-1" aria-current="page" href="/page-page/program/index.html">Program</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" aria-current="page" href="/page-page/kemitraan/index.html">Kemitraan</a>
+                        <a class="nav-link mx-1" aria-current="page" href="/page-page/kemitraan/index.html">Kemitraan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" aria-current="page" href="/page-page/pencapain/index.html">Pencapaian</a>
+                        <a class="nav-link mx-1" aria-current="page" href="/page-page/pencapain/index.html">Pencapaian</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" aria-current="page" href="/page-page/rubrik-berita/index.html">Rubrik Hukum</a>
+                        <a class="nav-link mx-1" aria-current="page" href="/page-page/rubrik-berita/index.html">Rubrik Hukum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-1" aria-current="page" href="#">Konsultasi</a>
                     </li>
                 </ul>
-
+                <!-- leftSide-navigation-option-end -->
+                <!-- rightSide-navigation-option -->
                 <form action="" class="form-class">
-                    <ul class="navbar-nav mx-2">
+                    <ul class="navbar-nav mx-1">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Semua
                             </a>
-                            <ul class="dropdown-menu kopoii" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu ul-dropdown-wrapper" aria-labelledby="navbarDropdown">
                                 <li class="">
                                     <h4 style="margin-bottom: 2px;">Tentang Kami</h4>
                                 </li>
@@ -140,62 +147,56 @@
                             </ul>
                         </li>
                     </ul>
-                    <div class="wrapper-input">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <!-- <button class="search-icon" type="submit">
-                        <i class="fa fa-search widht-search-icon"></i>
-                    </button> -->
+                    <div class="search">
+                        <input type="text" class="input" placeholder="Search...">
+                        <button class="btn" type="button">  
+                         <i class="fas fa-search" style="color: #3d759a;"></i>  
+                        </button>
                     </div>
-                    <div class="dropdown dropdown-language position-relative">
-                        <button class="button-language dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Indo
-                                </button>
-                        <ul class="dropdown-menu dropdown-toggle-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Inglish</a></li>
-                            <li><a class="dropdown-item" href="#">Indo</a></li>
-                        </ul>
-                    </div>
-
                 </form>
+                <!-- rightSide-navigation-option -->
             </div>
         </div>
     </nav>
+    <!-- navbar-ends-->
 
+    <!-- promote-program-first -->
     <section id="program">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="header-program">
-                    <h1><span>D-lead</span> menyediakan pelatihan dan webinar untuk anda ikuti
-                </div>
-                </h1>
-                <div class="row d-flex align-items-center">
-                    <div class="col-lg-7 d-flex justify-content-center">
-                        <div class="img-wrapper-program">
-                            <img src="/img/training-page-image/webinar-1.jpg" alt="">
-                        </div>
+        <div class="container">
+            <div class="header-program">
+                <h1><span>D-lead</span> menyediakan pelatihan dan webinar untuk anda ikuti
+            </div>
+            </h1>
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-7 d-flex justify-content-center">
+                    <div class="img-wrapper-program">
+                        <img src="/img/training-page-image/webinar-1.jpg" alt="">
                     </div>
-                    <div class="col-lg-5">
-                        <div class="wrapper-promote">
-                            <p><span>25x</span> Cheaper Than Other Platforms
-                            </p>
-                            <p><span>380+</span> Mentors Join Encode
-                            </p>
-                            <p><span>100%</span> Lifetime Guarantee
-                            </p>
-                        </div>
-                        <div class="wrapper-promote-2">
-                            <h3>Get In-Depth Knowledge.
-                            </h3>
-                            <p>Lorem ipsum dolor sit amet.lorem3 Lorem.</p>
-                            <button type="" class="button-promoter mt-2">Webinar</button>
-                            <button type="" class="button-promoter mt-2 mx-4">Legal-training</button>
-                        </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="wrapper-promote">
+                        <p><span>25x</span> Cheaper Than Other Platforms
+                        </p>
+                        <p><span>380+</span> Mentors Join Encode
+                        </p>
+                        <p><span>100%</span> Lifetime Guarantee
+                        </p>
+                    </div>
+                    <div class="wrapper-promote-2">
+                        <h3>Get In-Depth Knowledge.
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet.lorem3 Lorem.</p>
+                        <button type="" class="button-promoter mt-2">Webinar</button>
+                        <button type="" class="button-promoter mt-2 mx-4">Legal-training</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- promote-program-first-ends -->
 
+
+    <!-- promote-program-second -->
     <section id="promote_program">
         <div class="container">
             <div class="header-h1-program">
@@ -232,7 +233,9 @@
             </div>
         </div>
     </section>
+    <!-- promote-program-second-ends -->
 
+    <!-- promote-program-third -->
     <section id="promote_program_2">
         <div class="container">
             <div class="row d-flex justify-content-center align-items-center">
@@ -271,6 +274,7 @@
                             <p>Proses latihan mandiri akan digunakan juga platform WAG, Kahoot dan Menteemeter sebagai platform yang menyediakan quiz secara menarik dan interatif. Untuk platform ini mengikuti kesiapan peserta</p>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-lg-5">
                     <div class="img-wrapper-promote-2side">
@@ -280,7 +284,9 @@
             </div>
         </div>
     </section>
+    <!-- promote-program-third -->
 
+    <!-- slider-mentor-program -->
     <section id="mentor_program">
         <div class="container">
             <div class="header-mentor">
@@ -290,9 +296,11 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
+                    <!-- swiper-mentor-slider -->
                     <div class="swiper swiper-mentor">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide p-5">
+                            <!-- card-mentor-slider -->
+                            <div class="swiper-slide">
                                 <div class="card-mentor">
                                     <div class="img-mentor">
                                         <img src="/img/pencapain/img-1.jpeg" alt="">
@@ -309,7 +317,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide p-5">
+                            <div class="swiper-slide">
                                 <div class="card-mentor">
                                     <div class="img-mentor">
                                         <img src="/img/pencapain/img-1.jpeg" alt="">
@@ -326,7 +334,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide p-5">
+                            <div class="swiper-slide">
                                 <div class="card-mentor">
                                     <div class="img-mentor">
                                         <img src="/img/pencapain/img-1.jpeg" alt="">
@@ -343,7 +351,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide p-5">
+                            <div class="swiper-slide">
                                 <div class="card-mentor">
                                     <div class="img-mentor">
                                         <img src="/img/pencapain/img-1.jpeg" alt="">
@@ -360,7 +368,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide p-5">
+                            <div class="swiper-slide">
                                 <div class="card-mentor">
                                     <div class="img-mentor">
                                         <img src="/img/pencapain/img-1.jpeg" alt="">
@@ -377,16 +385,18 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- card-mentor-slider-ends -->
                         </div>
                         <div class="swiper-pagination"></div>
-
                     </div>
-
+                    <!-- swiper-mentor-slider -->
                 </div>
             </div>
         </div>
     </section>
+    <!-- slider-mentor-program -->
 
+    <!-- end-hero-header-wrapper -->
     <div class="container end-header-wrapper">
         <div class="row">
             <div class="col-lg-12 d-flex justify-content-center">
@@ -400,6 +410,8 @@
             </div>
         </div>
     </div>
+    <!-- end-hero-header-wrapper -->
+
 
     <footer>
         <div class="container-fluid">

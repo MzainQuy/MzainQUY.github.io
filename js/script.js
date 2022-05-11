@@ -24,18 +24,34 @@ function linkAction() {
     navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
+/*===== ACTIVE AND REMOVE MENU =====*/
 
+// navbar-scroll-change-BG
 const navbar = document.getElementsByTagName('nav')[0];
 
 window.addEventListener('scroll', function() {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 50) {
         navbar.classList.replace('nab-color', 'navbar-color-scroll');
-    } else if (this.window.scrollY <= 80) {
+    } else if (this.window.scrollY <= 50) {
         navbar.classList.replace('navbar-color-scroll', 'nab-color');
     }
 });
+// navbar-scroll-change-BG
+
+// search-dom-style
+const search = document.querySelector('.search')
+const btn = document.querySelector('.btn')
+const input = document.querySelector('.input')
+btn.addEventListener('click', () => {
+        search.classList.toggle('active')
+        input.focus()
+    })
+    // search-dom-style
+
+/*===== MENU SHOW =====*/
 
 
+// slider-function-halaman-index-main
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
@@ -72,7 +88,7 @@ var swiper = new Swiper(".childSwiper", {
         prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-        375: {
+        320: {
             loop: true,
             slidesPerView: 1,
         },
@@ -83,7 +99,6 @@ var swiper = new Swiper(".childSwiper", {
         1024: {
             loop: true,
             slidesPerView: 3,
-            spaceBetween: 20
         },
 
 
@@ -95,7 +110,6 @@ var swiper = new Swiper(".childSwiper", {
 var swiper = new Swiper(".childSwiper-2", {
     centeredSlides: true,
     slidesPerView: 2,
-    spaceBetween: 30,
     loop: true,
     autoplay: {
         delay: 5500,
@@ -133,7 +147,7 @@ var swiper = new Swiper(".childSwiper-2", {
 var swiper = new Swiper(".child-2mySwiper", {
     slidesPerView: 2,
     spaceBetween: 30,
-    slidesPerGroup: 2,
+    centeredSlides: true,
     loop: true,
     pagination: {
         el: ".swiper-pagination",
@@ -144,8 +158,10 @@ var swiper = new Swiper(".child-2mySwiper", {
         prevEl: ".swiper-button-prev"
     },
     breakpoints: {
-        375: {
+        320: {
             loop: true,
+            centeredSlides: true,
+
             slidesPerView: 1,
         },
         1240: {
@@ -154,10 +170,10 @@ var swiper = new Swiper(".child-2mySwiper", {
         },
     }
 });
+// slider-function-halaman-index-main
 
 
-// halaman program/slider-mentor
-
+// slider halaman program/slider-mentor
 var swiper = new Swiper(".swiper-mentor", {
     slidesPerView: 3,
     centeredSlides: true,
@@ -171,9 +187,11 @@ var swiper = new Swiper(".swiper-mentor", {
         clickable: true
     },
     breakpoints: {
-        375: {
+        320: {
             loop: true,
             slidesPerView: 1,
+            centeredSlides: true,
+
         },
         768: {
             loop: true,
@@ -185,3 +203,4 @@ var swiper = new Swiper(".swiper-mentor", {
         },
     }
 });
+// halaman program/slider-mentor

@@ -38,43 +38,50 @@
 
 <body>
 
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg nab-color">
-        <div class="container">
+        <div class="container-fluid padding-navbar">
+            <!-- icon-navbar -->
             <a class="navbar-brand" href="#">
                 <img src="img/main-page-image/icon-nav.png" alt="" width="174" height="52">
             </a>
-
+            <!-- icon-navbar-ends -->
+            <!-- toggle-image-responsive -->
             <div class="nav__toggle" id="nav-toggle">
                 <i class="fa-solid fa-bars icon-widht me-1" style="font-size: 30px;"></i>
             </div>
-
+            <!-- toggle-image-responsive-ends -->
             <div class="collapse navbar-collapse nav__menu d-inline-block" id="collapes22">
-
+                <!-- leftSide-navigation-option -->
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link mx-2" aria-current="page" href="index.html">Beranda</a>
+                        <a class="link-active nav-link mx-1 " aria-current="page" href="index.html">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" aria-current="page" href="/page-page/program/index.html">Program</a>
+                        <a class="nav-link mx-1" aria-current="page" href="/page-page/program/index.html">Program</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" aria-current="page" href="/page-page/kemitraan/index.html">Kemitraan</a>
+                        <a class="nav-link mx-1" aria-current="page" href="/page-page/kemitraan/index.html">Kemitraan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" aria-current="page" href="/page-page/pencapain/index.html">Pencapaian</a>
+                        <a class="nav-link mx-1" aria-current="page" href="/page-page/pencapain/index.html">Pencapaian</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" aria-current="page" href="/page-page/rubrik-berita/index.html">Rubrik Hukum</a>
+                        <a class="nav-link mx-1" aria-current="page" href="/page-page/rubrik-berita/index.html">Rubrik Hukum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-1" aria-current="page" href="#">Konsultasi</a>
                     </li>
                 </ul>
-
+                <!-- leftSide-navigation-option-end -->
+                <!-- rightSide-navigation-option -->
                 <form action="" class="form-class">
-                    <ul class="navbar-nav mx-2">
+                    <ul class="navbar-nav mx-1">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Semua
                             </a>
-                            <ul class="dropdown-menu kopoii" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu ul-dropdown-wrapper" aria-labelledby="navbarDropdown">
                                 <li class="">
                                     <h4 style="margin-bottom: 2px;">Tentang Kami</h4>
                                 </li>
@@ -139,67 +146,64 @@
                             </ul>
                         </li>
                     </ul>
-                    <div class="wrapper-input">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <!-- <button class="search-icon" type="submit">
-                        <i class="fa fa-search widht-search-icon"></i>
-                    </button> -->
+                    <div class="search">
+                        <input type="text" class="input" placeholder="Search...">
+                        <button class="btn" type="button">  
+                         <i class="fas fa-search" style="color: #3d759a;"></i>  
+                        </button>
                     </div>
-                    <div class="dropdown dropdown-language position-relative">
-                        <button class="button-language dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Indo
-                                </button>
-                        <ul class="dropdown-menu dropdown-toggle-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Inglish</a></li>
-                            <li><a class="dropdown-item" href="#">Indo</a></li>
-                        </ul>
-                    </div>
-
                 </form>
+                <!-- rightSide-navigation-option -->
             </div>
         </div>
     </nav>
+    <!-- navbar-ends-->
 
+    <!-- hero-slider-main-page-->
     <section id="hero_slider">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide d-flex align-items-center">
-                                <div class="text-wrapper-hero">
-                                    Ketahui Perbedaan Hak Atas Merek Dan Lisensi Merek <br>
-                                    <button class="button-hero">Selengkapnya >>></button>
-                                </div>
-                                <div class="sfsd"></div>
-                                <img src="img/main-page-image/hero-img-slider/hero-1.jpg" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- slider-hero -->
+                        <div class="swiper-slide d-flex align-items-center">
+                            <div class="text-wrapper-hero">
+                                Ketahui Perbedaan Hak Atas Merek Dan Lisensi Merek <br>
+                                <button class="button-hero">Selengkapnya >>></button>
                             </div>
-                            <div class="swiper-slide d-flex align-items-center">
-                                <div class="text-wrapper-hero">
-                                    Ketahui Perbedaan Hak Atas Merek Dan Lisensi Merek <br>
-                                    <button class="button-hero">Selengkapnya >>></button>
-                                </div>
-                                <div class="sfsd"></div>
-                                <img src="img/main-page-image/hero-img-slider/hero-2.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide d-flex align-items-center">
-                                <div class="text-wrapper-hero">
-                                    Ketahui Perbedaan Hak Atas Merek Dan Lisensi Merek<br>
-                                    <button class="button-hero">Selengkapnya >>></button>
-                                </div>
-                                <div class="sfsd"></div>
-                                <img src="img/main-page-image/hero-img-slider/hero-3.jpg" alt="">
-                            </div>
+                            <div class="trasnparent-bg"></div>
+                            <img src="img/main-page-image/hero-img-slider/hero-1.jpg" alt="">
                         </div>
+                        <div class="swiper-slide d-flex align-items-center">
+                            <div class="text-wrapper-hero">
+                                Ketahui Perbedaan Hak Atas Merek Dan Lisensi Merek <br>
+                                <button class="button-hero">Selengkapnya >>></button>
+                            </div>
+                            <div class="trasnparent-bg"></div>
+                            <img src="img/main-page-image/hero-img-slider/hero-2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide d-flex align-items-center">
+                            <div class="text-wrapper-hero">
+                                Ketahui Perbedaan Hak Atas Merek Dan Lisensi Merek<br>
+                                <button class="button-hero">Selengkapnya >>></button>
+                            </div>
+                            <div class="trasnparent-bg"></div>
+                            <img src="img/main-page-image/hero-img-slider/hero-3.jpg" alt="">
+                        </div>
+                        <!-- slider-hero -->
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                 </div>
-
+                <!-- button-prev&next-hero-slider -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- button-prev&next-hero-slider -->
             </div>
         </div>
-    </section>
 
+    </section>
+    <!-- hero-slider-main-page-ends-->
+
+    <!-- content -->
     <section id="content">
         <div class="container-fluid">
             <div class="container">
@@ -236,21 +240,27 @@
             </div>
         </div>
     </section>
+    <!-- content-ends -->
 
-
-    <section id="many_slider">
+    <!-- slider-webinar -->
+    <section id="webinar_slider">
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
+                        <!-- header-webinar-main-page -->
                         <div class="header-h1-wrapper">
                             <h1>Webinar <span>D-lead</span></h1>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat ipsam ducimus possimus, nemo doloribus, amet quos harum minima non ipsa odit dicta nulla aliquam. Ipsa debitis ducimus magni quisquam sit.</p>
                             <button type="">Webinar</button>
                         </div>
+                        <!-- header-webinar-main-page-ends -->
+
+                        <!-- webinarSlider-main-page -->
                         <div class="swiper childSwiper box-swiper">
                             <div class="swiper-wrapper swiper-wrapper-childSwiper d-flex align-items-center">
-                                <div class="swiper-slide swiper-slide-childSwiper d-flex align-items-center">
+                                <!-- card-slider-main-Webinar -->
+                                <div class="swiper-slide d-flex align-items-center p-5">
                                     <div class="card-webinar">
                                         <div class="img-card-webinar">
                                             <img src="/img/training-page-image/webinar-1.jpg" alt="">
@@ -265,7 +275,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide swiper-slide-childSwiper d-flex align-items-center">
+                                <div class="swiper-slide d-flex align-items-center p-5">
                                     <div class="card-webinar">
                                         <div class="img-card-webinar">
                                             <img src="/img/training-page-image/webinar-2.jpg" alt="">
@@ -280,7 +290,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide swiper-slide-childSwiper d-flex align-items-center">
+                                <div class="swiper-slide d-flex align-items-center p-5">
                                     <div class="card-webinar">
                                         <div class="img-card-webinar">
                                             <img src="/img/training-page-image/webinar-3.jpg" alt="">
@@ -295,17 +305,23 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- card-slider-main-Webinar -->
                             </div>
+                            <!-- button-next-and-preview -->
                             <div class="swiper-button-prev swiper-button-prev-child">
                             </div>
                             <div class="swiper-button-next swiper-button-next-child">
                             </div>
+                            <!-- button-next-and-preview-ends -->
                             <div class="swiper-pagination"></div>
                         </div>
+                        <!-- webinarSlider-main-page-ends -->
                     </div>
                 </div>
     </section>
+    <!-- slider-webinar-ends -->
 
+    <!-- program -->
     <section id="program">
         <div class="container-fluid">
             <div class="container">
@@ -314,9 +330,11 @@
                 </div>
                 </h1>
                 <div class="row d-flex align-items-center">
+                    <!-- wrapper-slider-program -->
                     <div class="childSwiper-2 swiper col-lg-6 box-legal-swiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide me-2 d-flex justify-content-center">
+                            <!-- card-slider-program -->
+                            <div class="swiper-slide p-1 d-flex justify-content-center">
                                 <div class="card p-2">
                                     <img src="/img/training-page-image/webinar-1.jpg" alt="">
                                     <div class="card-body">
@@ -332,7 +350,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide me-2 d-flex justify-content-center">
+                            <div class="swiper-slide p-1 d-flex justify-content-center">
                                 <div class="card card-2 p-2">
                                     <img src="/img/training-page-image/webinar-2.jpg" alt="">
                                     <div class="card-body">
@@ -348,7 +366,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide me-2 d-flex justify-content-center">
+                            <div class="swiper-slide p-1 d-flex justify-content-center">
                                 <div class="card card-3 p-2">
                                     <img src="/img/training-page-image/webinar-3.jpg" alt="">
                                     <div class="card-body">
@@ -364,8 +382,10 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- card-slider-program-end -->
                         </div>
                     </div>
+                    <!-- wrapper-slider-program-ends-->
                     <div class="col-lg-5">
                         <div class="wrapper-promote">
                             <p><span>25x</span> Cheaper Than Other Platforms
@@ -386,65 +406,66 @@
             </div>
         </div>
     </section>
+    <!-- program-ends-->
 
-    <section id="many_child_slider">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row p-2">
-
-                    <div class="col-lg-6">
-                        <div class="h2-wrapper-many">
-                            <h2>Infografik</h2>
-                            <p>lihat infografik-infografik menarik d-lead</p>
-                            <button type="">lihat infografik</button>
-                        </div>
-                        <div class="swiper child-2mySwiper">
-                            <div class="swiper-wrapper swiper-wrapper-2 d-flex align-items-center">
-                                <div class="swiper-slide img-wrapper-2">
-                                    <img src="img/berita/infografis/infografis-1.jpeg" alt="">
-                                </div>
-                                <div class="swiper-slide img-wrapper-2">
-                                    <img src="img/berita/infografis/infografis-2.jpeg" alt="">
-                                </div>
-                                <div class="swiper-slide img-wrapper-2">
-                                    <img src="img/berita/infografis/infografis-3.jpeg" alt="">
-                                </div>
-                            </div>
-
-                            <div class="swiper-button-next swiper-button-next-child-2" style="z-index: 41;"></div>
-                        </div>
+    <!-- infografik-slider -->
+    <section id="infografik_slider">
+        <div class="container">
+            <div class="row p-2">
+                <div class="col-lg-6">
+                    <div class="h2-wrapper-many">
+                        <h2>Infografik</h2>
+                        <p>lihat infografik-infografik menarik d-lead</p>
+                        <button type="">lihat infografik</button>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="h2-wrapper-many">
-                            <h2>Hubungi Kami</h2>
+                    <!-- slider-infografik-wrapper -->
+                    <div class="swiper child-2mySwiper">
+                        <div class="swiper-wrapper swiper-wrapper-2 d-flex align-items-center">
+                            <div class="swiper-slide img-wrapper-2">
+                                <img src="img/berita/infografis/infografis-1.jpeg" alt="">
+                            </div>
+                            <div class="swiper-slide img-wrapper-2">
+                                <img src="img/berita/infografis/infografis-2.jpeg" alt="">
+                            </div>
+                            <div class="swiper-slide img-wrapper-2">
+                                <img src="img/berita/infografis/infografis-3.jpeg" alt="">
+                            </div>
                         </div>
-                        <div class="from-wrapper mt-5">
-                            <form class="form">
-                                <div>
-                                    <input type="text" id="fname" name="firstname" placeholder="Nama Lengkap">
-                                </div>
-                                <div>
-                                    <input type="email" id="email" name="email" placeholder="Email">
-                                </div>
-                                <div>
-                                    <input type="email" id="email" name="email" placeholder="Subjek">
-                                </div>
-                                <div>
-                                    <textarea rows="5" placeholder="Pertanyaan Anda"></textarea>
-                                </div>
-                                <div class="button-form-wrapper">
-                                    <button class="button-form">
+                        <div class="swiper-button-next swiper-button-next-child-2" style="z-index: 41;"></div>
+                    </div>
+                    <!-- slider-infografik-wrapper -->
+                </div>
+                <!-- form-hubungi -->
+                <div class="col-lg-6">
+                    <div class="h2-wrapper-many">
+                        <h2>Hubungi Kami</h2>
+                    </div>
+                    <div class="from-wrapper mt-5">
+                        <form class="form">
+                            <div>
+                                <input type="text" id="fname" name="firstname" placeholder="Nama Lengkap">
+                            </div>
+                            <div>
+                                <input type="email" id="email" name="email" placeholder="Email">
+                            </div>
+                            <div>
+                                <textarea rows="12" placeholder="Pertanyaan Anda"></textarea>
+                            </div>
+                            <div class="button-form-wrapper">
+                                <button class="button-form">
                                     Kirim
                                 </button>
-                                </div>
-                            </form>
-                        </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
+                <!-- form-hubungi-ends -->
             </div>
         </div>
     </section>
+    <!-- infografik-slider -->
 
+    <!-- footer -->
     <footer>
         <div class="container-fluid">
             <hr style="height: 2px;width:100%;">
@@ -499,14 +520,7 @@
             Copyright @2022 D-Lead. All Rights Reserved.
         </div>
     </footer>
-
-
-
-
-
-
-
-
+    <!-- footer -->
 
 
 
@@ -524,11 +538,11 @@
     <!-- swiper-js -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js "></script>
     <!-- swiper-js-ends -->
+
     <!-- UIkit-script -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit-icons.min.js"></script>
     <!-- UIkit-script -->
-
 
     <!-- script-native -->
     <script src="js/script.js "></script>

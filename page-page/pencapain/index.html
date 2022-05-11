@@ -38,43 +38,50 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg nab-color">
+        <div class="container-fluid padding-navbar">
+            <!-- icon-navbar -->
             <a class="navbar-brand" href="#">
                 <img src="/img/main-page-image/icon-nav.png" alt="" width="174" height="52">
             </a>
-
+            <!-- icon-navbar-ends -->
+            <!-- toggle-image-responsive -->
             <div class="nav__toggle" id="nav-toggle">
                 <i class="fa-solid fa-bars icon-widht me-1" style="font-size: 30px;"></i>
             </div>
-
+            <!-- toggle-image-responsive-ends -->
             <div class="collapse navbar-collapse nav__menu d-inline-block" id="collapes22">
-
+                <!-- leftSide-navigation-option -->
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link mx-2" aria-current="page" href="/index.html">Beranda</a>
+                        <a class="link-active nav-link mx-1 " aria-current="page" href="/index.html">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" aria-current="page" href="/page-page/program/index.html">Program</a>
+                        <a class="nav-link mx-1" aria-current="page" href="/page-page/program/index.html">Program</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" aria-current="page" href="/page-page/kemitraan/index.html">Kemitraan</a>
+                        <a class="nav-link mx-1" aria-current="page" href="/page-page/kemitraan/index.html">Kemitraan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" aria-current="page" href="/page-page/pencapain/index.html">Pencapaian</a>
+                        <a class="nav-link mx-1" aria-current="page" href="/page-page/pencapain/index.html">Pencapaian</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" aria-current="page" href="/page-page/rubrik-berita/index.html">Rubrik Hukum</a>
+                        <a class="nav-link mx-1" aria-current="page" href="/page-page/rubrik-berita/index.html">Rubrik Hukum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-1" aria-current="page" href="#">Konsultasi</a>
                     </li>
                 </ul>
-
+                <!-- leftSide-navigation-option-end -->
+                <!-- rightSide-navigation-option -->
                 <form action="" class="form-class">
-                    <ul class="navbar-nav mx-2">
+                    <ul class="navbar-nav mx-1">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Semua
                             </a>
-                            <ul class="dropdown-menu kopoii" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu ul-dropdown-wrapper" aria-labelledby="navbarDropdown">
                                 <li class="">
                                     <h4 style="margin-bottom: 2px;">Tentang Kami</h4>
                                 </li>
@@ -139,48 +146,45 @@
                             </ul>
                         </li>
                     </ul>
-                    <div class="wrapper-input">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <!-- <button class="search-icon" type="submit">
-                        <i class="fa fa-search widht-search-icon"></i>
-                    </button> -->
+                    <div class="search">
+                        <input type="text" class="input" placeholder="Search...">
+                        <button class="btn" type="button">  
+                         <i class="fas fa-search" style="color: #3d759a;"></i>  
+                        </button>
                     </div>
-                    <div class="dropdown dropdown-language position-relative">
-                        <button class="button-language dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Indo
-                                </button>
-                        <ul class="dropdown-menu dropdown-toggle-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Inglish</a></li>
-                            <li><a class="dropdown-item" href="#">Indo</a></li>
-                        </ul>
-                    </div>
-
                 </form>
+                <!-- rightSide-navigation-option -->
             </div>
         </div>
     </nav>
+    <!-- navbar-ends-->
 
+    <!-- pencapain -->
     <section id="pencapain">
-        <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-lg-6">
-                <div class="text-wrapper-pencapain">
-                    <h2>Pencapain D-lead dalam mendorong perubahan
-                    </h2>
-                    <p>Semangat gotong royong membawa D-lead, d-lead memiliki berbagai pencapain, untuk bersatu dalam menciptakan ekosistem menyeluruh.
-                    </p>
-                    <a href="../about/about-us.html">
-                        <button type="" class="button-pencapain">Tentang D-lead</button>
-                    </a>
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-6">
+                    <div class="text-wrapper-pencapain">
+                        <h2>Pencapain D-lead dalam mendorong perubahan
+                        </h2>
+                        <p>Semangat gotong royong membawa D-lead, d-lead memiliki berbagai pencapain, untuk bersatu dalam menciptakan ekosistem menyeluruh.
+                        </p>
+                        <a href="../about/about-us.html">
+                            <button type="" class="button-pencapain">Tentang D-lead</button>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="img-wrapper-pencapain">
-                    <img src="/img/main-page-image/hero-img-slider/hero-3.jpg" alt="">
+                <div class="col-lg-6">
+                    <div class="img-wrapper-pencapain">
+                        <img src="/img/main-page-image/hero-img-slider/hero-3.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- pencapain-ends -->
 
+    <!--  pencapain-dua -->
     <section id="pencapain_2">
         <div class="container-fluid wrapperFull">
             <div class="container">
@@ -202,11 +206,13 @@
             </div>
         </div>
     </section>
+    <!--  pencapain-dua -->
 
+    <!--  pencapain-tiga-mentor -->
     <section id="pencapain_3">
-        <div class="container d-flex justify-content-center align-items-center">
+        <div class="container d-flex justify-content-center align-items-center flex-wrap">
             <div class="col-lg-6">
-                <div class="text-wrapper-pencapainTiga">
+                <div class="text-wrapper-pencapainTiga mb-pencapain-3">
                     <h2>D-lead memiliki berbagai mentor dan Narasumber terbaik
                     </h2>
                     <p>Dalam menggapain pencapain yang sudah didapat, D-lead memiliki berbagai mentor dan Narasumber terbaik untuk berpartisipasi dalam membangun edukasi tentang hukum.
@@ -228,7 +234,9 @@
             </div>
         </div>
     </section>
+    <!--  pencapain-tiga-mentor -->
 
+    <!--  pencapain-tiga-institusi -->
     <section id="pencapain_4">
         <div class="container p-5">
             <div class="row">
@@ -287,6 +295,7 @@
             </div>
         </div>
     </section>
+    <!--  pencapain-tiga-institusi -->
 
 
 

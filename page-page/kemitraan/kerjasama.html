@@ -38,43 +38,50 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg nab-color">
+        <div class="container-fluid padding-navbar">
+            <!-- icon-navbar -->
             <a class="navbar-brand" href="#">
                 <img src="/img/main-page-image/icon-nav.png" alt="" width="174" height="52">
             </a>
-
+            <!-- icon-navbar-ends -->
+            <!-- toggle-image-responsive -->
             <div class="nav__toggle" id="nav-toggle">
                 <i class="fa-solid fa-bars icon-widht me-1" style="font-size: 30px;"></i>
             </div>
-
+            <!-- toggle-image-responsive-ends -->
             <div class="collapse navbar-collapse nav__menu d-inline-block" id="collapes22">
-
+                <!-- leftSide-navigation-option -->
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link mx-2" aria-current="page" href="/index.html">Beranda</a>
+                        <a class="link-active nav-link mx-1 " aria-current="page" href="/index.html">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" aria-current="page" href="/page-page/program/index.html">Program</a>
+                        <a class="nav-link mx-1" aria-current="page" href="/page-page/program/index.html">Program</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" aria-current="page" href="/page-page/kemitraan/index.html">Kemitraan</a>
+                        <a class="nav-link mx-1" aria-current="page" href="/page-page/kemitraan/index.html">Kemitraan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" aria-current="page" href="/page-page/pencapain/index.html">Pencapaian</a>
+                        <a class="nav-link mx-1" aria-current="page" href="/page-page/pencapain/index.html">Pencapaian</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" aria-current="page" href="/page-page/rubrik-berita/index.html">Rubrik Hukum</a>
+                        <a class="nav-link mx-1" aria-current="page" href="/page-page/rubrik-berita/index.html">Rubrik Hukum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-1" aria-current="page" href="#">Konsultasi</a>
                     </li>
                 </ul>
-
+                <!-- leftSide-navigation-option-end -->
+                <!-- rightSide-navigation-option -->
                 <form action="" class="form-class">
-                    <ul class="navbar-nav mx-2">
+                    <ul class="navbar-nav mx-1">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Semua
                             </a>
-                            <ul class="dropdown-menu kopoii" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu ul-dropdown-wrapper" aria-labelledby="navbarDropdown">
                                 <li class="">
                                     <h4 style="margin-bottom: 2px;">Tentang Kami</h4>
                                 </li>
@@ -139,27 +146,20 @@
                             </ul>
                         </li>
                     </ul>
-                    <div class="wrapper-input">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <!-- <button class="search-icon" type="submit">
-                        <i class="fa fa-search widht-search-icon"></i>
-                    </button> -->
+                    <div class="search">
+                        <input type="text" class="input" placeholder="Search...">
+                        <button class="btn" type="button">  
+                         <i class="fas fa-search" style="color: #3d759a;"></i>  
+                        </button>
                     </div>
-                    <div class="dropdown dropdown-language position-relative">
-                        <button class="button-language dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Indo
-                                </button>
-                        <ul class="dropdown-menu dropdown-toggle-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Inglish</a></li>
-                            <li><a class="dropdown-item" href="#">Indo</a></li>
-                        </ul>
-                    </div>
-
                 </form>
+                <!-- rightSide-navigation-option -->
             </div>
         </div>
     </nav>
+    <!-- navbar-ends-->
 
+    <!-- kemitraan-guide -->
     <section id="kemitraan">
         <div class="kemitraan2">
             <div class="header-h1-wrapper">
@@ -169,13 +169,14 @@
             </div>
             <div class="rightbox">
                 <h2 class="text-center h2-head-partner">Alur Partnership</h2>
-                <div class="rb-container">
-                    <ul class="rb">
-                        <li class="rb-item">
-                            <div class="timestamp">
+                <!-- list-guide-wrapper -->
+                <div class="list-guider-wrapper">
+                    <ul class="underlist-guide-partner">
+                        <li class="list-guide-partner">
+                            <div class="number-list">
                                 1
                             </div>
-                            <div class="wrapper-text-partnership d-flex">
+                            <div class="wrapper-text-partnership d-flex flex-wrap">
                                 <div class="item-title">
                                     Instansi, Institusi, Organisasi dan/atau Lembaga mengajukan Proposal Kerja Sama (dilampiri dengan Surat Pengantar Permohonan Kerja Sama) melalui email: dlead@ddplaw.co.id
                                     <span id="span_list_kemitraan"> <br> Proposal Kerja Sama memuat hal-hal sebagai berikut: <br> 1. Latar belakang instansi, institusi, organisasi atau lembaga yang mengajukan kerja sama; <br> 2. Bentuk kerja sama yang diajukan meliputi webinar, workshop, legal training,
@@ -184,17 +185,17 @@
                                 <img src="/img/about-us/choice-1.svg" alt="" width="200" height="200">
                             </div>
                         </li>
-                        <li class="rb-item">
-                            <div class="timestamp">
+                        <li class="list-guide-partner">
+                            <div class="number-list">
                                 2
                             </div>
-                            <div class="wrapper-text-partnership d-flex">
-                                <div class="item-title">Penerimaan Berkas Oleh Tim D-lead</div>
+                            <div class="wrapper-text-partnership">
+                                <div class="item-title d-flex flex-wrap">Penerimaan Berkas Oleh Tim D-lead</div>
                                 <img src="/img/about-us/img-1.svg" alt="" width="200" height="200">
                             </div>
                         </li>
-                        <li class="rb-item">
-                            <div class="timestamp">
+                        <li class="list-guide-partner">
+                            <div class="number-list">
                                 3
                             </div>
                             <div class="wrapper-text-partnership d-flex flex-wrap">
@@ -205,8 +206,8 @@
                                 <img src="/img/about-us/choice-2.svg" alt="" width="200" height="200">
                             </div>
                         </li>
-                        <li class="rb-item">
-                            <div class="timestamp">
+                        <li class="list-guide-partner">
+                            <div class="number-list">
                                 4
                             </div>
                             <div class="wrapper-text-partnership d-flex flex-wrap">
@@ -217,8 +218,8 @@
                                 <img src="/img/about-us/choice-3.svg" alt="" width="200" height="200">
                             </div>
                         </li>
-                        <li class="rb-item">
-                            <div class="timestamp">
+                        <li class="list-guide-partner">
+                            <div class="number-list">
                                 5
                             </div>
                             <div class="wrapper-text-partnership d-flex flex-wrap">
@@ -231,10 +232,13 @@
                         </li>
                     </ul>
                 </div>
+                <!-- list-guide-wrapper -->
             </div>
         </div>
     </section>
+    <!-- kemitraan-guide -->
 
+    <!-- send-message -->
     <section id="send-message">
         <div class="container-fluid">
             <div class="col-lg-12 d-flex justify-content-center">
@@ -259,11 +263,12 @@
                         <span>0813-092-3344</span><br>
                         <button type="">Hubungi Kami</button>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
+    <!-- send-message-ends-->
+
 
     <footer>
         <div class="container-fluid">
